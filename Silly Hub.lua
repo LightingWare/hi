@@ -37,15 +37,15 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that the system will accept, can be RAW file links (pastebin, github, etc.) or simple strings ("hello", "key22")
    }
 })
-local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Test",
    Callback = function()
          
    end,
 })
-local Toggle = Tab:CreateToggle({
+local Toggle = MainTab:CreateToggle({
    Name = "Nothing",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file; make sure every element has a different flag if you're using configuration saving to ensure no overlaps
