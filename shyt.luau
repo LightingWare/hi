@@ -53,6 +53,7 @@ local char = plr.Character or plr.CharacterAdded:Wait()
 
 local root = root or Instance.new("Part", char.Head)
 
+root.CFrame = CFrame.new(0, 0, -100)
 root.CanCollide = false
 root.Transparency = 0.5
 root.CastShadow = false
