@@ -5,7 +5,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Rayfield Interface Suite",
    LoadingSubtitle = "by Sirius",
    ShowText = "Rayfield", -- for mobile users to unhide Rayfield, change if you'd like
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -38,5 +38,12 @@ local Window = Rayfield:CreateWindow({
    }
 })
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+         
+   end,
+})
 
 Rayfield:LoadConfiguration()
